@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Landing Page Scroll Snap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
+    </head>
+    <body>
+        <!-- nav -->
+        <header>
+            <div class="menu-toggle" onclick="toggleMenu()">Menu</div>
+            <nav id="menu" class="none">
+                <button onclick="scrollToSection('home')">Home</button>
+                <button onclick="scrollToSection('skill')">Skill</button>
+                <button onclick="scrollToSection('projek')">Projek</button>
+                <button onclick="scrollToSection('contact')">Contact</button>
+            </nav>
+        </header>
+        <!-- nav -->
+        <main>
+            <!-- bagian home utama -->
+            <section id="home" class="content-section container-home">
+                <div class="container-box-home">
+                    <div class="left-panel">
+                        <img
+                            src="assets/images/MyFoto/foto.png"
+                            alt="Foto Profil"
+                        />
+                    </div>
+                    <div class="right-panel">
+                        <h1>My Portofolio</h1>
+                        <p>
+                            selamat datang di web Portofolio saya perkenalkan
+                            nama saya
+                            <strong>Muhammad Misbakhul Munir</strong> biasa di
+                            panggil <strong>Mumun</strong> di web sederhana ini
+                            berisi skill / keahlian saya dan apa yg sedang saya
+                            tengah perdalam dan pelajari
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- bagian home utama -->
+            <!-- bagian skill -->
+            <section id="skill" class="content-section container-skill">
+                <div class="container-box-skill">
+                    <h1 class="judulskill">Skill</h1>
+                    <div class="skill-item">
+                        <img
+                            src="assets/images/SkillFoto/html-css.png"
+                            alt="Skill 1"
+                        />
+                        <div class="desc">
+                            <h2>Html dan Css</h2>
+                            <p>
+                                <strong>Membuat tampilan web responsif</strong>
+                            </p>
+                            <p>Sudah digunakan di beberapa projek</p>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <img
+                            src="assets/images/SkillFoto/php.png"
+                            alt="Skill 3"
+                        />
+                        <div class="desc">
+                            <h2>PHP</h2>
+                            <p><strong>Membuat UI dinamis</strong></p>
+                            <p>masih tengah belajar ...</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <img
+                            src="assets/images/SkillFoto/javascript.png"
+                            alt="Skill 2"
+                        />
+                        <div class="desc">
+                            <h2>JavaScript</h2>
+                            <p><strong>Logika interaktif pada web</strong></p>
+                            <p>
+                                Sudah digunakan dalam projack kecil dan animasi
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="skill-item">
+                        <img
+                            src="assets/images/SkillFoto/react.png"
+                            alt="Skill 4"
+                        />
+                        <div class="desc">
+                            <h2>React.js</h2>
+                            <p><strong>Membuat UI dinamis</strong></p>
+                            <p>masih tengah belajar ...</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <img
+                            src="assets/images/SkillFoto/skill.png"
+                            alt="Skill 5"
+                        />
+                        <div class="desc">
+                            <h2>Skill lain</h2>
+                            <p><strong>Keahlian di luar coding</strong></p>
+                            <p>
+                                salah satu nya
+                                <a href="components/editor.html">Editing</a>
+                                video maupun foto, penguasaan prompt
+                                <a href="#">Ai</a> sehingga pekerjaan lebih
+                                cepat dan efisien
+                            </p>
+                        </div>
+                    </div>
+                    <div class="all"><a href="all">All</a></div>
+                </div>
+            </section>
+            <!-- bagian skill -->
+            <!-- bagian projek -->
+            <section id="projek" class="content-section container-project">
+                <div class="container-box-project">
+                    <h2>Projek</h2>
+                    <div class="projek-item">
+                        <a href="projek1.html" target="_blank"
+                            >Lihat Projek 1</a
+                        >
+                        <div class="desc">
+                            <p>Website Portofolio</p>
+                            <p>Dibuat dengan HTML, CSS</p>
+                            <p>Responsive dan ringan</p>
+                        </div>
+                    </div>
+
+                    <div class="projek-item">
+                        <a href="projek2.html" target="_blank">LihatProjek 2</a>
+                        <div class="desc">
+                            <p>Mini Game JavaScript</p>
+                            <p>Menggunakan canvas</p>
+                            <p>interaksi dan logika</p>
+                        </div>
+                    </div>
+
+                    <div class="projek-item">
+                        <a href="projek3.html" target="_blank"
+                            >Lihat Projek 3</a
+                        >
+                        <div class="desc">
+                            <p>Aplikasi Todo React</p>
+                            <p>React + Local Storage</p>
+                            <p>Manajemen daftar tugas</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- bagian projek -->
+            <!-- bagian contact -->
+            <section id="contact" class="content-section container-contact">
+                <div class="container-box-contact">
+                    <h2>Contact</h2>
+                    <p>Email: Exsample@email.com</p>
+                    <form onsubmit="kirimPesan(event)">
+                        <input
+                            type="text"
+                            placeholder="Pesan kamu..."
+                            required
+                        />
+                        <button type="submit">Kirim</button>
+                    </form>
+                </div>
+            </section>
+            <!-- bagian contact -->
+        </main>
+
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

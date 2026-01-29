@@ -1,0 +1,154 @@
+/* General Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1b1e; /* Background gelap */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    color: #e5e7eb; /* Teks lebih terang */
+}
+
+.title {
+    margin: 20px 0;
+    font-size: 30px;
+    color: #ffffff; /* Warna teks putih */
+}
+
+/* Container Styling */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 95%;
+    max-width: 300px;
+}
+
+/* App Card Styling */
+.app-card {
+    background-color: #2b2d31; /* Background card gelap */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.app-header {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.app-header img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.app-info p {
+    height: 80px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #d1d5db; /* Teks lebih cerah */
+    overflow-y: scroll;
+}
+
+/* Tombol Gambar di Kanan Bawah */
+.app-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px 10px;
+    border: none;
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 15px;
+    z-index: 2;
+}
+
+.app-button:hover {
+    background-color: #2563eb;
+}
+
+/* Thumbnail Container */
+.thumbnail-container {
+    display: flex;
+    gap: 8px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.thumbnail-container img {
+    width: 87px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Lightbox Styling */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox img {
+    width: 100%;
+    height: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Link ke Halaman Lain */
+.link-to-page {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    background-color: #3b82f6;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.link-to-page:hover {
+    background-color: #2563eb;
+}
+.kosong {
+  margin: 28px;
+}

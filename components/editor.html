@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tampilan Aplikasi</title>
+        <link rel="stylesheet" href="../styles/editor.css" />
+    </head>
+    <body>
+        <h1 class="title">Editor yang Dikuasai</h1>
+
+        <div class="container">
+          <h2>Editor Video</h2>
+            <!-- Daftar Aplikasi -->
+            <div class="app-card">
+                <div class="app-header">
+                    <img
+                        src="../assets/images/EditorSkill/kinemaster.png"
+                        alt="Aplikasi 1"
+                    />
+                    <div class="app-info">
+                        <p>
+                            kinemaster - pemula hingga profesional. bagus untuk edit video panjang dengan berbagai efek , stiker , font , penyampur layar dan transisi yg beragam.
+                        </p>
+                    </div>
+                    <button class="app-button" onclick="toggleThumbnails(1)">
+                        Gambar
+                    </button>
+                </div>
+                <div
+                    id="thumbnails-1"
+                    class="thumbnail-container"
+                    style="display: none"
+                >
+                    <img
+                        src="../assets/images/EditorSkillgalery/kinemaster1.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/kinemaster1.jpg')"
+                    />
+                    <img
+                        src="../assets/images/EditorSkillgalery/kinemaster2.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/kinemaster2.jpg')"
+                    />
+                    <img
+                        src="../assets/images/EditorSkillgalery/kinemaster3.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/kinemaster3.jpg')"
+                    />
+                </div>
+            </div>
+
+            <div class="app-card">
+                <div class="app-header">
+                    <img
+                        src="../assets/images/EditorSkill/Capcut.png"
+                        alt="Aplikasi 2"
+                    />
+                    <div class="app-info">
+                        <p>
+                         CapCut - pemula hingga profesional. tampilan minimalis bagus untuk video pendek maupun panjang , efek transisi untuk senematik , fitur ai.
+                        </p>
+                    </div>
+                    <button class="app-button" onclick="toggleThumbnails(2)">
+                        Gambar
+                    </button>
+                </div>
+                <div
+                    id="thumbnails-2"
+                    class="thumbnail-container"
+                    style="display: none"
+                >
+                    <img
+                        src="../assets/images/EditorSkillgalery/capcut1.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/capcut1.jpg')"
+                    />
+                    <img
+                        src="../assets/images/EditorSkillgalery/capcut2.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/capcut2.jpg')"
+                    />
+                    <img
+                        src="../assets/images/EditorSkillgalery/capcut3.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/capcut3.jpg')"
+                    />
+                </div>
+            </div>
+            <h2>Editor Foto</h2>
+            <div class="app-card">
+                <div class="app-header">
+                    <img
+                        src="../assets/images/EditorSkill/PixelLab.jpeg"
+                        alt="Aplikasi 3"
+                    />
+                    <div class="app-info">
+                        <p>
+                            Aplikasi 1 - Deskripsi singkat tentang aplikasi ini.
+                        </p>
+                    </div>
+                    <button class="app-button" onclick="toggleThumbnails(3)">
+                        Gambar
+                    </button>
+                </div>
+                <div
+                    id="thumbnails-3"
+                    class="thumbnail-container"
+                    style="display: none"
+                >
+                    <img
+                        src="../assets/images/EditorSkillgalery/pixselab1.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/pixselab1.jpg')"
+                    />
+                    <img
+                        src="../assets/images/EditorSkillgalery/pixselab2.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/pixselab2.jpg')"
+                    />
+                    <img
+                        src="../assets/images/EditorSkillgalery/pixselab3.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/pixselab3.jpg')"
+                    />
+                    <img
+                        src="../assets/images/EditorSkillgalery/pixselab4.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/pixselab4.jpg')"
+                    />
+                    <img
+                        src="../assets/images/EditorSkillgalery/pixselab5.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/pixselab5.jpg')"
+                    />
+                </div>
+            </div>
+            
+            <div class="app-card">
+                <div class="app-header">
+                    <img
+                        src="../assets/images/EditorSkill/picsart.jpeg"
+                        alt="Aplikasi 4"
+                    />
+                    <div class="app-info">
+                        <p>
+                            Aplikasi 1 - Deskripsi singkat tentang aplikasi ini.
+                        </p>
+                    </div>
+                    <button class="app-button" onclick="toggleThumbnails(4)">
+                        Gambar
+                    </button>
+                </div>
+                <div
+                    id="thumbnails-4"
+                    class="thumbnail-container"
+                    style="display: none"
+                >
+                    <img
+                        src="../assets/images/EditorSkillgalery/pixselab1.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/pixselab1.jpg')"
+                    />
+                    <img
+                        src="../assets/images/EditorSkillgalery/pixselab2.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/pixselab2.jpg')"
+                    />
+                    <img
+                        src="../assets/images/EditorSkillgalery/pixselab3.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/pixselab3.jpg')"
+                    />
+                    <img
+                        src="../assets/images/EditorSkillgalery/pixselab4.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/pixselab4.jpg')"
+                    />
+                    <img
+                        src="../assets/images/EditorSkillgalery/pixselab5.jpg"
+                        onclick="openLightbox('../assets/images/EditorSkillgalery/pixselab5.jpg')"
+                    />
+                </div>
+            </div>
+            <div class="kosong">
+            </div>
+        </div>
+
+        <!-- Link ke Halaman Lain -->
+        <a href="../index.html" class="link-to-page">Ke Halaman utama →</a>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <div class="lightbox-content" id="lightbox-content"></div>
+            <!-- <span class="close-btn" onclick="closeLightbox()"></span> -->
+        </div>
+
+        <script src="../scripts/editor.js"></script>
+    </body>
+</html>
