@@ -7,7 +7,6 @@
 body,
 html {
     height: 100%;
-    scroll-behavior: smooth;
     overflow: hidden;
     font-family: Arial, sans-serif;
 }
@@ -61,14 +60,12 @@ nav button {
 }
 
 main {
-    height: 100vh;
+    height: 100%;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
 }
 
 .content-section {
     scroll-snap-align: start;
-    min-height: 100vh;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -87,6 +84,13 @@ background: linear-gradient(to top, #C5EDFF 0%, #FDFD3B 28%);
     justify-content: center;
     margin: 200px;
 }
+
+.container-box-skill {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
 .container-skill {
     background-color: #c5edff;
 }
@@ -108,17 +112,18 @@ background: linear-gradient(to top, #C5EDFF 0%, #FDFD3B 28%);
 }
 
 .all {
-    position: absolute;
+    display: block;          /* biar bisa geser */
+    width: fit-content;      /* biar tidak melebar */
+    margin-left: auto;       /* dorong ke kanan */
+    margin-top: 10px;
+
     padding: 5px;
-    bottom: 26px;
-    right: 26px;
     font-size: 20px;
     background-color: yellow;
     border-radius: 5px;
-    outline-style: solid;
-    outline-color: black;
-    outline-width: 2px;
+    outline: 2px solid black;
 }
+
 .all a {
     color: black;
     text-decoration: none;
@@ -222,10 +227,11 @@ form button {
     nav button {
         font-size: 16px;
     }
+
     .container-box-skill h1 {
-        font-size: 34px;
+        font-size: 20px;
     }
     .container-box-skill h2 {
-        font-size: 20px;
+        font-size: 10px;
     }
 }
