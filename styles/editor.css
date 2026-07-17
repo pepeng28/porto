@@ -4,62 +4,70 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-color: #1a1b1e; /* Background gelap */
+    background-color: #1a1b1e;
     margin: 0;
     font-family: Arial, sans-serif;
     position: relative;
-    color: #e5e7eb; /* Teks lebih terang */
+    color: #e5e7eb;
 }
 
 .title {
     margin: 20px 0;
-    font-size: 30px;
-    color: #ffffff; /* Warna teks putih */
+    font-size: 50px;
+    color: #ffffff;
 }
 
+h2 {
+    font-size: 35px;
+    color: #ffffff;
+}
 /* Container Styling */
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 50px;
     width: 95%;
-    max-width: 300px;
+    max-width: 1000px;
 }
 
 /* App Card Styling */
 .app-card {
-    background-color: #2b2d31; /* Background card gelap */
-    border-radius: 10px;
+    background-color: #2b2d31;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     position: relative;
     padding-bottom: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .app-header {
-    margin: 10px;
+    margin: 18px;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 50px;
     position: relative;
 }
 
 .app-header img {
-    width: 120px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
     border-radius: 8px;
 }
 
 .app-info p {
-    height: 80px;
+    height: 100px;
     padding-bottom: 20px;
     margin-bottom: 15px;
-    font-size: 15px;
-    color: #d1d5db; /* Teks lebih cerah */
+    font-size: 20px;
+    color: #d1d5db;
     overflow-y: scroll;
 }
 
@@ -68,14 +76,14 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border: none;
     background-color: #3b82f6;
     color: white;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
-    font-size: 15px;
+    font-size: 18px;
     z-index: 2;
 }
 
@@ -86,20 +94,20 @@ body {
 /* Thumbnail Container */
 .thumbnail-container {
     display: flex;
-    gap: 8px;
-    margin: 10px;
+    gap: 50px;
+    margin: 20px;
     flex-wrap: wrap;
 }
 
 .thumbnail-container img {
-    width: 87px;
-    height: 45px;
+    width: 150px;
+    height: 90px;
     object-fit: cover;
     border-radius: 5px;
     cursor: pointer;
 }
 
-/* Lightbox Styling */
+/* Lightbox Styling - Perbaikan */
 .lightbox {
     display: none;
     position: fixed;
@@ -107,48 +115,93 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .lightbox-content {
-    max-width: 90%;
-    max-height: 90%;
+    position: relative;
+    max-width: 95%;
+    max-height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.lightbox img {
-    width: 100%;
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    width: auto;
     height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
 
 .close-btn {
-    position: absolute;
+    position: fixed;
     top: 20px;
-    right: 20px;
-    font-size: 24px;
+    right: 30px;
+    font-size: 40px;
     color: white;
     cursor: pointer;
+    z-index: 1001;
+    background: rgba(0,0,0,0.5);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.1);
 }
 
 /* Link ke Halaman Lain */
 .link-to-page {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 40px;
+    right: 40px;
     text-decoration: none;
     background-color: #3b82f6;
     color: white;
     padding: 8px 16px;
     border-radius: 5px;
     transition: background-color 0.3s;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .link-to-page:hover {
     background-color: #2563eb;
 }
+
 .kosong {
-  margin: 28px;
+    margin: 28px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .lightbox {
+        padding: 10px;
+    }
+    
+    .lightbox-content img {
+        max-height: 80vh;
+    }
+    
+    .close-btn {
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+    }
 }
